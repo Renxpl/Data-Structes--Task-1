@@ -10,10 +10,7 @@ Gezici::Gezici(Dugum* ilkDugum, int sira)
 
 }
 
-Gezici::~Gezici()
-{
-    delete suankiDugum;
-}
+
 
 void Gezici::Sifirla(Dugum* ilkDugum)
 {

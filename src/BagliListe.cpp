@@ -16,13 +16,13 @@ BagliListe::BagliListe(char gen,Dugum* sonrakiDugum, int sira)
 BagliListe::~BagliListe()
 {
     
-    while(basDugum != nullptr){
+    delete gezici;
+    do{
         Dugum* sonraki = basDugum->sonrakiDugum;
         delete basDugum;
         basDugum = sonraki;
 
-    } 
-    delete gezici;
+    } while(basDugum->sira != buyukluk - 1);
 }
 
 

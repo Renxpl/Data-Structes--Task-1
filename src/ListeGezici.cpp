@@ -8,10 +8,7 @@ ListeGezici::ListeGezici(BagliListe* basListe)
     this->kacinciListe = 0;
 }
 
-ListeGezici::~ListeGezici()
-{
-    delete suankiBagliListe;
-}
+
 
 void ListeGezici::Sifirla(BagliListe* basListe)
 {

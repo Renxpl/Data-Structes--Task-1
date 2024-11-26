@@ -15,7 +15,7 @@ class Gezici{
     public:
 
         Gezici(Dugum*, int);
-        ~Gezici();
+        
         
         void Sifirla(Dugum*);
 

@@ -13,15 +13,13 @@ BagliBagliListe::BagliBagliListe(BagliListe *ilkListe)
 
 BagliBagliListe::~BagliBagliListe()
 {
-    while(basBagliListe != nullptr){
+    delete gezici;
+    do{
         BagliListe* sonraki = basBagliListe->sonrakiBagliListe;
         delete basBagliListe;
         basBagliListe= sonraki;
 
-    } 
-
-
-    delete gezici;
+    } while(basBagliListe->sira != buyukluk - 1);
 
 }
 

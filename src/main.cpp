@@ -202,11 +202,10 @@ int main(){
 
     }
 
-    delete bagliBagliListe;
 
 
     islemlerDosya.close();
     dnaDosya.close();
-
+    delete bagliBagliListe;
 
 }

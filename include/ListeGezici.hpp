@@ -11,7 +11,6 @@ class ListeGezici{
 
     public:
         ListeGezici(BagliListe*);
-        ~ListeGezici();
         void Sifirla(BagliListe*);
         BagliListe* Git(int);
         BagliListe* ListeGetir();
