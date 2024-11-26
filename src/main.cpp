@@ -75,11 +75,12 @@ int main(){
     int ilkSayi= 0;
     int ikinciSayi = 0;
     ifstream islemlerDosya("./Islemler.txt");
+    bool hataVer=false;
     if (!islemlerDosya) {
         cout<<"Islemler.txt dosyasi acilamadi";
         return 1;
     }
-    while(menuSecim != 5){
+    while(menuSecim != 5 && !hataVer){
         cout << "1-Carprazlama\n2-Mutasyon\n3-Otomatik Islemler\n4-Ekrana Yazdir\n5-Cikis" << endl;
         cin >> menuSecim;
         switch(menuSecim){
@@ -191,7 +192,8 @@ int main(){
                 break;
             default:
             //hata ele alma
-                cout <<"gecersiz input girisi. Tekrar giriniz" << endl;
+                cout <<"Gecersiz input girisi. Program Sonlandiriliyor."  << endl;
+                hataVer = true;
                 break;
 
 
